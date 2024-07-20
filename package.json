@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "k6": "^0.0.0"
+  },
+  "name": "k6",
+  "description": "การทำการทดสอบโหลด (Load Testing) ในการตรวจสอบและประเมินประสิทธิภาพและความทนทานของระบบต่อการใช้งานที่หลากหลายสถานการณ์ ",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "spike:local": "k6 run test/spike-test.js",
+    "average:local": "k6 run test/average-test.js",
+    "smoke:local": "k6 run test/smoke-test.js",
+    "breakpoint:local": "k6 run test/breakpoint-test.js",
+    "spike:prod": "k6 cloud test/spike-test.js",
+    "average:prod": "k6 cloud test/average-test.js",
+    "smoke:prod": "k6 cloud test/smoke-test.js",
+    "breakpoint:prod": "k6 cloud test/breakpoint-test.js"
+  },
+  "keywords": [],
+  "author": "nack_thanaphon",
+  "license": "ISC"
+}
