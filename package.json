@@ -10,15 +10,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "spike:local": "k6 run test/spike-test.js",
-    "average:local": "k6 run test/average-test.js",
-    "smoke:local": "k6 run test/smoke-test.js",
-    "breakpoint:local": "k6 run test/breakpoint-test.js",
-    "spike:prod": "k6 cloud test/spike-test.js",
-    "average:prod": "k6 cloud test/average-test.js",
-    "smoke:prod": "k6 cloud test/smoke-test.js",
-    "breakpoint:prod": "k6 cloud test/breakpoint-test.js"
+    "test:local": "k6 run test.js",
+    "test:prod": "k6 cloud test.js"
   },
   "keywords": [],
   "author": "nack_thanaphon",
